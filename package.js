@@ -19,11 +19,12 @@ Package.onUse(function(api) {
   // Core
   api.use([
     'templating',
-    'ecmascript'
+    'ecmascript',
+    'mongo',
     ]);
   // 3rd party
   api.use([
-    'percolate:synced-cron@1.3.0'
+    'percolate:synced-cron@1.3.0',
     ]);
 
   api.addFiles('lib/tapfuse-unified-cronjobs.js', S);
